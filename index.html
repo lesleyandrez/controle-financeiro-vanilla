@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Controle Financeiro</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section>
+            <h2>Controle Financeiro</h2>
+
+            <div class="container">
+                <h3 class="label-saldo-atual">Saldo atual</h3>
+
+                <div id="valor-saldo-atual" class="valor-saldo-atual">R$ 0,00</div>
+
+                <div class="box-receitas-despesas">
+                    <div>
+                        <h3>Receitas</h3>
+                        <p id="valor-receitas" class="dinheiro positivo">+ R$0,00</p>
+                    </div>
+
+                    <div>
+                        <h3>Despesas</h3>
+                        <p id="valor-despesas" class="dinheiro negativo">- R$0,00</p>
+                    </div>
+                </div>
+
+                <form id="form" class="form-adicionar-transacao">
+                    <h2>Adicionar Transação</h2>
+                    <div class="form-control">
+                        <label for="nome-transacao">Nome</label>
+                        <input autofocus type="text" id="nome-transacao" placeholder="Nome da transação" />
+                    </div>
+
+                    <div>
+                        <label for="valor-transacao">Valor <br />
+                        </label>
+                        <input type="number" id="valor-transacao" autocomplete="off" placeholder="Valor da transação" inputmode="numeric" />
+                    </div>
+
+                    <button class="btn" id="btn-adicionar" disabled>Adicionar</button>
+                </form>
+            </div>
+        </section>
+        <section>
+            <h2>Transações</h2>
+
+            <ul id="transacoes" class="transacoes">
+            </ul>
+        </section>
+
+    </div>
+    <script type="module" src="/js/app.js"></script>
+</body>
+
+</html>

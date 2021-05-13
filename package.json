@@ -1,0 +1,12 @@
+{
+  "name": "controle-financeiro",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "vite"
+  },
+  "devDependencies": {
+    "vite": "^2.2.3"
+  },
+  "license": "MIT"
+}
